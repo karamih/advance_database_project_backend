@@ -111,7 +111,7 @@ class MonthlyExpense(Base):
 class Customer(Base):
     __tablename__ = 'ET_CUSTOMER'
 
-    A_customerID = Column(String(20), primary_key=True, nullable=False)
+    A_customerID = Column(Integer, primary_key=True, nullable=False)
     A_firstName = Column(String(50))
     A_lastName = Column(String(50))
     A_age = Column(Integer)

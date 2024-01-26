@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes import mobile_version
+from app.routes import mobile_version, windows_version
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -22,3 +22,4 @@ def index():
 
 
 app.include_router(router=mobile_version.router)
+app.include_router(router=windows_version.router)
